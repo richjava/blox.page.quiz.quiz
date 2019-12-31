@@ -1,0 +1,12 @@
+{% set blox = htmlWebpackPlugin.options.blox %}
+{% set title = blox.page.title %}
+
+{% extends "layout/layout.njk" %}
+
+{% block content %}
+    <section class="container pt-6 pt-lg-8 pb-8 pb-lg-10">
+        <h1 class="pb-3">Burnout Quiz</h1>
+        <p class="lead mw-800 mb-6">Are you suffering from burnout? Take this short quiz to find out and begin the journey to recovery. Results are kept strictly confidential and are not stored in a database.</p>
+        <a href="/questions/page-1" class="btn btn-primary d-block d-sm-inline-block mb-5">Start Quiz</a>
+    </section>
+{% endblock %}
